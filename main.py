@@ -44,7 +44,7 @@ def __get_cursor():
         return mysql_conn.cursor()
 
 
-def mysql_demo(event, context):
+def get_tweets(event, context):
     global mysql_conn
 
     # Initialize connections lazily, in case SQL access isn't needed for this
